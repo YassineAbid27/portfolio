@@ -3,7 +3,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 const stats = [
   { label: 'Projects', value: '4+' },
   { label: 'Certifications', value: '7' },
-  { label: 'Experiences', value: '2' },
+  { label: 'Experiences', value: '3' },
   { label: 'Languages', value: '4' },
 ]
 
