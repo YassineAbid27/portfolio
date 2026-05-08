@@ -91,7 +91,7 @@ export default function Hero() {
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
-            href="https://linkedin.com/in/yassine-abid"
+            href="https://www.linkedin.com/in/yassine-abid-ai/"
             target="_blank"
             rel="noreferrer"
             className="px-7 py-3 bg-cyan-600 hover:bg-cyan-500 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-[#030712] font-semibold rounded-lg transition-all duration-200 hover:scale-105"

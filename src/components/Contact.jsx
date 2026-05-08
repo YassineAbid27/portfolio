@@ -25,7 +25,7 @@ export default function Contact() {
 
         <div className="flex items-center justify-center gap-8 text-sm">
           <a
-            href="https://linkedin.com/in/yassine-abid"
+            href="https://www.linkedin.com/in/yassine-abid-ai/"
             target="_blank"
             rel="noreferrer"
             className="text-slate-500 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400 transition-colors font-medium"
