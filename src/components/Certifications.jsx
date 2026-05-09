@@ -5,24 +5,34 @@ const certGroups = [
     issuer: 'NVIDIA',
     style: 'text-green-700 border-green-300 bg-green-50 dark:text-green-400 dark:border-green-500/30 dark:bg-green-500/10',
     items: [
-      'Generative AI with Diffusion Models',
-      'Fundamentals of Deep Learning',
-      'Building Transformer-Based NLP Applications',
-      'Building Agent RAG with LLMs',
+      { name: 'Generative AI with Diffusion Models', file: '/certificates/Generative AI with Diffusion Models.pdf' },
+      { name: 'Fundamentals of Deep Learning', file: '/certificates/My Learning _ NVIDIA.pdf' },
+      { name: 'Building Transformer-Based NLP Applications', file: '/certificates/Building Transformer-Based Natural Language Processing.pdf' },
+      { name: 'Building Agent RAG with LLMs', file: null },
     ],
   },
   {
     issuer: 'DataCamp',
     style: 'text-blue-700 border-blue-300 bg-blue-50 dark:text-blue-400 dark:border-blue-500/30 dark:bg-blue-500/10',
     items: [
-      'Unsupervised Learning in Python',
-      'Supervised Learning with Scikit-learn',
+      { name: 'Unsupervised Learning in Python', file: '/certificates/certificate (Unsupervised Learning in Python).pdf' },
+      { name: 'Supervised Learning with Scikit-learn', file: '/certificates/certificate.pdf' },
+    ],
+  },
+  {
+    issuer: 'Cisco',
+    style: 'text-sky-700 border-sky-300 bg-sky-50 dark:text-sky-400 dark:border-sky-500/30 dark:bg-sky-500/10',
+    items: [
+      { name: 'CCNA — Introduction to Networks', file: '/certificates/CCNA-_Introduction_to_Networks_certificate_yassine-abid-polytechnicien-tn_0183762b-0fce-4cc0-b308-9a7bf0e19e40.pdf' },
+      { name: 'CCNA — Switching, Routing & Wireless', file: '/certificates/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_yassine-abid-polytechnicien-tn_34054415-de0f-402d-bcba-1492031e8abc.pdf' },
     ],
   },
   {
     issuer: 'Certiport / Pearson VUE',
     style: 'text-orange-700 border-orange-300 bg-orange-50 dark:text-orange-400 dark:border-orange-500/30 dark:bg-orange-500/10',
-    items: ['Python'],
+    items: [
+      { name: 'Python', file: '/certificates/Certificat_python_1740469592.pdf' },
+    ],
   },
 ]
 
@@ -41,7 +51,7 @@ export default function Certifications() {
         <h2 className="text-4xl font-bold mb-3 text-slate-900 dark:text-slate-100">Certifications</h2>
         <div className="w-16 h-1 bg-gradient-to-r from-cyan-500 to-indigo-500 mb-12 rounded-full" />
 
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {certGroups.map(({ issuer, style, items }) => (
             <div
               key={issuer}
@@ -51,10 +61,21 @@ export default function Certifications() {
                 {issuer}
               </span>
               <ul className="space-y-3">
-                {items.map(item => (
-                  <li key={item} className="flex items-start gap-2.5 text-slate-600 dark:text-slate-400 text-sm">
+                {items.map(({ name, file }) => (
+                  <li key={name} className="flex items-start gap-2.5 text-sm">
                     <span className="text-cyan-600 dark:text-cyan-400 mt-0.5 shrink-0 font-mono">✓</span>
-                    {item}
+                    {file ? (
+                      <a
+                        href={file}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors hover:underline underline-offset-2"
+                      >
+                        {name}
+                      </a>
+                    ) : (
+                      <span className="text-slate-600 dark:text-slate-400">{name}</span>
+                    )}
                   </li>
                 ))}
               </ul>
