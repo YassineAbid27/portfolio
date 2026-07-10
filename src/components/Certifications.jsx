@@ -34,6 +34,14 @@ const certGroups = [
       { name: 'Python', file: '/certificates/Certificat_python_1740469592.pdf' },
     ],
   },
+  {
+    issuer: 'PMI',
+    style: 'text-amber-700 border-amber-300 bg-amber-50 dark:text-amber-400 dark:border-amber-500/30 dark:bg-amber-500/10',
+    badge: '/certificates/pmi-ready.png',
+    items: [
+      { name: 'Project Management Ready — Professional Certification', file: null },
+    ],
+  },
 ]
 
 const awards = [
@@ -51,8 +59,8 @@ export default function Certifications() {
         <h2 className="text-4xl font-bold mb-3 text-slate-900 dark:text-slate-100">Certifications</h2>
         <div className="w-16 h-1 bg-gradient-to-r from-cyan-500 to-indigo-500 mb-12 rounded-full" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {certGroups.map(({ issuer, style, items }) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
+          {certGroups.map(({ issuer, style, badge, items }) => (
             <div
               key={issuer}
               className="bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl p-6 hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 shadow-sm dark:shadow-none"
@@ -60,6 +68,11 @@ export default function Certifications() {
               <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold border mb-5 ${style}`}>
                 {issuer}
               </span>
+              {badge && (
+                <div className="flex justify-center mb-4">
+                  <img src={badge} alt={`${issuer} badge`} className="w-24 h-24 object-contain" />
+                </div>
+              )}
               <ul className="space-y-3">
                 {items.map(({ name, file }) => (
                   <li key={name} className="flex items-start gap-2.5 text-sm">
