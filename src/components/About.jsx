@@ -38,9 +38,9 @@ export default function About() {
           {/* Bio */}
           <div className="md:col-span-3 space-y-5 text-slate-600 dark:text-slate-400 leading-relaxed">
             <p>
-              I'm an AI &amp; Data Science engineering student at{' '}
-              <span className="text-slate-900 dark:text-slate-200 font-medium">Ecole Polytechnique Sousse</span>,
-              graduating in 2026. I design and build end-to-end AI systems — from data
+              I'm an AI &amp; Data Science engineer, graduated from{' '}
+              <span className="text-slate-900 dark:text-slate-200 font-medium">Ecole Polytechnique Sousse</span>{' '}
+              in 2026. I design and build end-to-end AI systems — from data
               pipelines to production-ready LLM applications.
             </p>
             <p>

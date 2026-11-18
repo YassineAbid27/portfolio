@@ -80,13 +80,13 @@ export default function Hero() {
         </h2>
 
         <p className="text-slate-400 dark:text-slate-500 text-sm font-mono mb-10">
-          Ecole Polytechnique Sousse &nbsp;·&nbsp; Graduating June 2026
+          Ecole Polytechnique Sousse &nbsp;·&nbsp; Graduated June 2026
         </p>
 
         <p className="text-slate-600 dark:text-slate-400 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
           Building end-to-end intelligent systems — from fully local RAG pipelines
-          to real-time computer vision. Passionate about LLMs, NLP, and turning
-          data into impactful decisions.
+          now in production, to real-time computer vision. Passionate about LLMs,
+          NLP, and turning data into impactful decisions.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">

@@ -3,12 +3,12 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 const experiences = [
   {
     company: 'SMI',
-    role: 'Final Year Internship',
-    period: 'Mar 2026 – Present',
+    role: 'AI Engineer — Graduation Project',
+    period: 'Mar 2026 – Oct 2026',
     location: 'Tunisia',
     description:
-      'Built a 6-step hybrid SLM+LLM pipeline for Letter of Credit compliance (UCP 600, ISBP 745, Incoterms) running 100% on local models — now in production at SMI. Achieved 98.6% accuracy on 400 test documents, cutting verification time from 5 business days to 4–7 minutes. Stack: Qwen2.5, Phi-3 mini, ChromaDB, LangGraph.',
-    current: true,
+      'Built a 6-step hybrid SLM+LLM pipeline for Letter of Credit compliance (UCP 600, ISBP 745, Incoterms) running 100% on local models — delivered and in production at SMI. Achieved 98.6% accuracy on 400 test documents, cutting verification time from 5 business days to 4–7 minutes. Stack: Qwen2.5, Phi-3 mini, ChromaDB, LangGraph.',
+    current: false,
   },
   {
     company: 'Proxym',
@@ -86,7 +86,7 @@ export default function Experience() {
                 <h4 className="text-slate-900 dark:text-slate-100 font-semibold">Ecole Polytechnique Sousse</h4>
                 <span className="text-slate-400 text-xs font-mono">2023 – 2026</span>
               </div>
-              <p className="text-cyan-600 dark:text-cyan-400 text-sm">Engineering Degree — Data Science &amp; AI</p>
+              <p className="text-cyan-600 dark:text-cyan-400 text-sm">Engineering Degree — Data Science &amp; AI &nbsp;·&nbsp; Graduated 2026</p>
               <p className="text-slate-400 text-xs mt-1">Deep Learning · NLP · AI Agents · Big Data · ML</p>
             </div>
             <div className="bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-xl p-6 hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 shadow-sm dark:shadow-none">
