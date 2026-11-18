@@ -7,7 +7,7 @@ const experiences = [
     period: 'Mar 2026 – Present',
     location: 'Tunisia',
     description:
-      'Building a fully local RAG system for Letter of Credit compliance checking against UCP 600, ISBP 745, and Incoterms standards, using local LLMs with multilingual support. No cloud dependencies.',
+      'Built a 6-step hybrid SLM+LLM pipeline for Letter of Credit compliance (UCP 600, ISBP 745, Incoterms) running 100% on local models — now in production at SMI. Achieved 98.6% accuracy on 400 test documents, cutting verification time from 5 business days to 4–7 minutes. Stack: Qwen2.5, Phi-3 mini, ChromaDB, LangGraph.',
     current: true,
   },
   {

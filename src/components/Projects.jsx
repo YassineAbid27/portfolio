@@ -6,7 +6,7 @@ const projects = [
     label: 'Graduation Project — PFE',
     title: 'Trade Document Compliance RAG',
     description:
-      'Fully local RAG system for trade document compliance checking. Compares Letter of Credit documents against UCP 600, ISBP 745, and Incoterms standards using local LLMs and multilingual embeddings. 100% offline — no cloud, no API keys.',
+      '6-step hybrid SLM+LLM pipeline for Letter of Credit compliance checking — now in production at SMI. Achieved 98.6% accuracy on 400 test documents, reducing verification from 5 business days to 4–7 minutes. Built on Qwen2.5, Phi-3 mini, ChromaDB, and LangGraph. 100% local, no cloud.',
     tags: ['Ollama', 'ChromaDB', 'FastAPI', 'Docker', 'LangChain', 'Multilingual NLP'],
     github: null,
     featured: true,
@@ -16,7 +16,7 @@ const projects = [
     label: 'NLP & Computer Vision',
     title: 'Sign Language Translator',
     description:
-      'Real-time ASL gesture recognition system. Captures hand landmarks via MediaPipe, classifies them with an LSTM network, and translates sign glosses to natural English sentences using FLAN-T5 with text-to-speech output.',
+      'Real-time recognition of 200 ASL gestures using MediaPipe landmarks and an LSTM — 98.9% accuracy. Translates sign sequences to natural sentences with FLAN-T5 and outputs speech via a REST Flask API.',
     tags: ['TensorFlow', 'MediaPipe', 'LSTM', 'FLAN-T5', 'Flask', 'OpenCV'],
     github: 'https://github.com/YassineAbid27/Projet_NLP_AND_COMPUTER_VISION',
     featured: false,

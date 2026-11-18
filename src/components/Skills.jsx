@@ -19,7 +19,7 @@ const skillGroups = [
   {
     category: 'Dev & Tools',
     accent: 'blue',
-    skills: ['Git', 'Docker', 'FastAPI', 'Flask', 'ChromaDB', 'Ollama'],
+    skills: ['Git', 'Docker', 'FastAPI', 'Flask', 'ChromaDB', 'Ollama', 'Playwright'],
   },
 ]
 

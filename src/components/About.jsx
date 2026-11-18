@@ -40,22 +40,23 @@ export default function About() {
             <p>
               I'm an AI &amp; Data Science engineering student at{' '}
               <span className="text-slate-900 dark:text-slate-200 font-medium">Ecole Polytechnique Sousse</span>,
-              Tunisia, graduating in June 2026. I design and build end-to-end AI systems
-              — from data pipelines to deployed APIs.
+              graduating in 2026. I design and build end-to-end AI systems — from data
+              pipelines to production-ready LLM applications.
             </p>
             <p>
               My graduation project is a fully local{' '}
               <span className="text-cyan-600 dark:text-cyan-400 font-medium">Trade Document Compliance RAG system</span>
-              {' '}using Ollama, ChromaDB, and multilingual embeddings. No cloud, no API keys —
-              built to run 100% offline on a bank's own servers.
+              {' '}now in production at SMI — achieving{' '}
+              <span className="text-slate-900 dark:text-slate-200 font-medium">98.6% accuracy</span>
+              {' '}on 400 test documents and cutting verification from 5 days to 4–7 minutes.
+              Built on Qwen2.5, Phi-3 mini, ChromaDB, and LangGraph. 100% local.
             </p>
             <p>
-              I'm particularly interested in LLM-powered applications, agentic systems,
-              and NLP pipelines. I've gained hands-on professional experience and have
-              a solid command of the full AI engineering stack.
+              Focused on LLM-powered applications, multi-agent systems, and NLP pipelines.
+              I work in Arabic, French, and English.
             </p>
             <p className="text-slate-400 dark:text-slate-500 text-sm font-mono">
-              📍 Monastir, Tunisia &nbsp;·&nbsp; Open to relocation
+              📍 Vicenza, Italy &nbsp;·&nbsp; Open to relocation
             </p>
             <p className="text-sm font-mono">
               <span className="text-slate-400 dark:text-slate-500">Currently exploring: </span>
